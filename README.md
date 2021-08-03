@@ -29,3 +29,7 @@ https://plugins.jetbrains.com/docs/intellij/plugin-signing.html
    https://plugins.jetbrains.com/author/me/
 
 9) TODO : GRADLE TOKEN WAY OF UPLOADING THE PLUGIN. AT THE MOMENT WE ARE MANUALLY UPLOADING THE PLUGIN
+10) TODO : Create a CI pipeline to publish
+
+11) TODO : Create new project type
+https://plugins.jetbrains.com/docs/intellij/project-wizard.html#implementing-new-module-type
