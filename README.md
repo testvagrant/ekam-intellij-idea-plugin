@@ -19,17 +19,21 @@ https://intellij-support.jetbrains.com/hc/en-us/community/posts/360000500010-Inc
 
 https://intellij-support.jetbrains.com/hc/en-us/community/posts/360004365440-How-to-add-custom-project-template-to-intellij-plugin-
 
-6) Logo
+6) Logo & Icon
    https://plugins.jetbrains.com/docs/intellij/plugin-icon-file.html#adding-plugin-logo-files-to-a-plugin-project
-
-7) Sign the plugin
+   https://plugins.jetbrains.com/docs/intellij/work-with-icons-and-images.html#how-to-organize-and-how-to-use-icons
+7) 
+8) Sign the plugin
 https://plugins.jetbrains.com/docs/intellij/plugin-signing.html
 
-8) Market Place
+9) Market Place
    https://plugins.jetbrains.com/author/me/
 
-9) TODO : GRADLE TOKEN WAY OF UPLOADING THE PLUGIN. AT THE MOMENT WE ARE MANUALLY UPLOADING THE PLUGIN
-10) TODO : Create a CI pipeline to publish
+10) Create new project type
+    https://plugins.jetbrains.com/docs/intellij/project-wizard.html
+    https://plugins.jetbrains.com/docs/intellij/project-wizard.html#implementing-new-module-type
+    https://plugins.jetbrains.com/docs/intellij/module-types.html#register-a-new-module-type
 
-11) TODO : Create new project type
-https://plugins.jetbrains.com/docs/intellij/project-wizard.html#implementing-new-module-type
+
+11) TODO : GRADLE TOKEN WAY OF UPLOADING THE PLUGIN. AT THE MOMENT WE ARE MANUALLY UPLOADING THE PLUGIN
+12) TODO : Create a CI pipeline to publish
