@@ -18,7 +18,7 @@
         <!-- Add your extensions here -->
         <moduleType  id="EKAM_MODULE" implementationClass="com.testvagrant.sdk.module.EkamModuleType"/>
         <moduleBuilder builderClass="com.testvagrant.sdk.module.EkamModuleBuilder"/>
-        <projectTemplate projectType="EKAM_MODULE" templatePath="/META-INF/hello-ekam.zip"/>
+        <projectTemplate projectType="EKAM_MODULE" templatePath="/META-INF/ekam-template.zip"/>
     </extensions>
 
     <actions>
