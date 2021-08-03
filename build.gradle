@@ -1,0 +1,129 @@
+plugins {
+    id 'org.jetbrains.intellij' version '1.1.4'
+    id 'java'
+}
+
+group 'com.testvagrant'
+version '1.0-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version = '2021.2'
+}
+patchPluginXml {
+    changeNotes = """
+      The first version of Ekam Plugin.<br>
+      <em>Supports Web, Mobile and REST API test automation. </em><br>
+      <em>Author single test and execute both on Android and iOS platforms. </em><br>
+      <em>Execute tests on unlimited configurations. </em>
+      """
+}
+test {
+    useJUnitPlatform()
+}
+
+signPlugin {
+    certificateChain = """
+-----BEGIN CERTIFICATE-----
+MIIEwjCCAqoCCQCiBxfdDUwU8zANBgkqhkiG9w0BAQsFADAjMQswCQYDVQQGEwJJ
+TjEUMBIGA1UECgwLdGVzdHZhZ3JhbnQwHhcNMjEwNzMwMTU0NTQwWhcNMjIwNzMw
+MTU0NTQwWjAjMQswCQYDVQQGEwJJTjEUMBIGA1UECgwLdGVzdHZhZ3JhbnQwggIi
+MA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDZyrJ2DjCbrzD9Sx2pgGLGZ+6D
+40Ui7/w+6d47hC6Y7O53zo4IeT+5y1REjmuaKaLW0BPtoNHIYDLzGhR5CzaevveO
+276LW/4bgP3Xdih4vE211T4Mocu4j09+eLwhsU4GY2lB+9/I9v24DSwUHqnjp7kg
+0xbN4P++Lzu3DL2iGywmVL/Q6Pxcw3nr3hlH4vpe7KCkWP/V1HNkzHWABetwffNt
+LcOUvCv7AtDzQvQ2S8jWIOc69Y4HkAceDHWV3QuX60pgopfgQghAhPlGlzRCSLRb
+j1gSjFgVf0OcHk+LzMIYLiFLOOwGLv1MYv76VY1JkLV7K7n0/2P42v8cnDiET1mf
+ItGsaH63kxpIFX5lBAtb/tpgiZRoKCD4uK0d/83Uue0GvlR/Qs9joAHz16e6E09X
+Fgvga7beblM9whu+wYyeK6uYU0KCP4RDE65IBuGZrXbtnCWSogwkWIhe8n9jweKw
+oW0FWFZlb41beKw4lDQSrj5+pMs53DQwUtd9b+I6kP2M48vwjK7mImCI9L2USoHH
+6Vlu0/Y0gc673TdqRj/o2zsgyMiAT43YtpoAYCXlQ/mtVtnQBrajLlidQgTdSk7z
+K3xlCh1+e1kCCb4eHlzXxHuIpZlrZwNAAceokXRqvvxBrqci/HEC3rhG532mu6Js
+y2IdVGbdTBAxPTlZIQIDAQABMA0GCSqGSIb3DQEBCwUAA4ICAQBcpS5YXABWkoDj
+yBcpg9Vi4zMEu4HMCBm/BnexZZHjlhdfT9wclsCsxI00qPv0O06zUr+11aPhhxC9
+pyd979hyMauBRMZiRZZN8jNS8DeHiUqsVTJ2HVq071uGs4976GkQWkBN4EYEvn6y
+IKnfrLonXeGySrgzYHJ6naZL0jID73Gjtu8iOcY0HJ7Ll75vzcQzAgFeE8I1GL+Z
+FLDDuwUm0Rt6RfDfdaro18E0lg8oyyfJg0cssZuRuzfnABxezHmk4kNJKE7eAcMU
+l9lFfmtEMmVZvfjeIJpxisurcKmZ+mif06muKTxGqIV9324mgo4ZcyGnXvfB+lLP
+vJySwOoM7bOkXUHuW6/ZdYtCZl3ZCIL+qRKxgqRqocOZLE+dIN9x361QYldqtClH
+7sY0WG4jYpDyzAyQyXkrxF8US+SL0aMhLDlmD2yhqjy/t4jjI6UpSr01fnNz2IxO
+3MJEHaF9Xa7xBzAi1uOkaM6n97BnIc/uiRaQMoJyf/aE71evK1f+ukUJGm/h6iAG
+DDPMPogz4H74GDHi4SoQgCE6C/qKwWTlTrXIDE6FLV7BHOMDUiamxkfxW2U3+cJC
+rauKXzqSzmSLQ7sV8ptR2WDK0JCf7q/S0PVtGkYGWvg8C8RBcP8/9yO6w9DGX4jo
+BqCvdLWFBzXKiFqQRP/ruMmBWlWA4g==
+-----END CERTIFICATE-----
+  """.stripIndent()
+
+    privateKey = """
+-----BEGIN ENCRYPTED PRIVATE KEY-----
+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
+8RqS2a7FNDNxlzL67jiFTjAxYQ==
+-----END ENCRYPTED PRIVATE KEY-----
+  """.stripIndent()
+
+    password = "Ekam"
+}
+
+publishPlugin {
+    token = "perm:a961riC....l17oW8t+Qw=="
+}

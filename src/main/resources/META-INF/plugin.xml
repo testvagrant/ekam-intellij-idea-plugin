@@ -1,0 +1,30 @@
+<idea-plugin>
+    <id>com.testvagrant.ekam-plugin</id>
+    <name>Ekam</name>
+    <vendor email="pani@testvagrant.com" url="http://www.testvagrant.com">TestVagrant</vendor>
+
+    <description><![CDATA[
+    Ekam by TestVagrant<br>
+    <em>Rapid automated tests development library for your Web, Mobile & REST applications.<br></em>
+    <em>Unify all of your test automation under a single repository. Leverage pre-built functions of Ekam  solving tech problems, so that you can focus just on authoring only tests. Ekam also simplifies test authoring by means of providing patterns to follow.</em>
+    ]]></description>
+
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+    <extensions defaultExtensionNs="com.intellij">
+
+        <projectTemplate projectType="JAVA_MODULE" templatePath="resources/projectTemplates/hello-ekam.zip"/>
+
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+    <change-notes>First version of Ekam</change-notes>
+</idea-plugin>
