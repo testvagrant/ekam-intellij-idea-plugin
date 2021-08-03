@@ -6,7 +6,7 @@
     <description><![CDATA[
     Ekam by TestVagrant<br>
     <em>Rapid automated tests development library for your Web, Mobile & REST applications.<br></em>
-    <em>Unify all of your test automation under a single repository. Leverage pre-built functions of Ekam  solving tech problems, so that you can focus just on authoring only tests. Ekam also simplifies test authoring by means of providing patterns to follow.</em>
+    <em>Unify all of your test automation under a single repository.</em>
     ]]></description>
 
 
@@ -16,7 +16,7 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
-        <moduleType  id="EKAM_MODULE" implementationClass="com.testvagrant.sdk.module.EkamModuleType"/>
+        <moduleType id="EKAM_MODULE" implementationClass="com.testvagrant.sdk.module.EkamModuleType"/>
         <moduleBuilder builderClass="com.testvagrant.sdk.module.EkamModuleBuilder"/>
         <projectTemplate projectType="EKAM_MODULE" templatePath="/META-INF/ekam-template.zip"/>
     </extensions>

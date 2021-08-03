@@ -41,7 +41,7 @@ public class EkamModuleType extends JavaModuleType {
     @NotNull
     @Override
     public Icon getNodeIcon(@Deprecated boolean b) {
-        return IconLoader.getIcon("/META-INF/pluginIcon.png", EkamPluginIcons.class);
+        return IconLoader.getIcon("/META-INF/pluginIcon2.png", EkamPluginIcons.class);
     }
 
 }

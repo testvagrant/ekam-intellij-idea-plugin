@@ -6,7 +6,7 @@ plugins {
 intellij { plugins = ['com.intellij.java'] }
 
 group 'com.testvagrant'
-version '1.0-SNAPSHOT'
+version '1.0'
 
 repositories {
     mavenCentral()
@@ -23,10 +23,7 @@ intellij {
 }
 patchPluginXml {
     changeNotes = """
-      The first version of Ekam Plugin.<br>
-      <em>Supports Web, Mobile and REST API test automation. </em><br>
-      <em>Author single test and execute both on Android and iOS platforms. </em><br>
-      <em>Execute tests on unlimited configurations. </em>
+      Created project template.<br>
       """
 }
 test {
