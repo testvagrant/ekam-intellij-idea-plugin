@@ -12,15 +12,13 @@
 
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
          on how to target different products -->
-    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
-    </extensions>
-    <extensions defaultExtensionNs="com.intellij">
-
-        <projectTemplate projectType="JAVA_MODULE" templatePath="resources/projectTemplates/hello-ekam.zip"/>
-
+        <moduleType  id="EKAM_MODULE" implementationClass="com.testvagrant.sdk.module.EkamModuleType"/>
+        <moduleBuilder builderClass="com.testvagrant.sdk.module.EkamModuleBuilder"/>
+        <projectTemplate projectType="EKAM_MODULE" templatePath="/META-INF/hello-ekam.zip"/>
     </extensions>
 
     <actions>
