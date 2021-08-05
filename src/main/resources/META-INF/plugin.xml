@@ -4,10 +4,10 @@
     <vendor email="pani@testvagrant.com" url="http://www.testvagrant.com">TestVagrant</vendor>
 
     <description><![CDATA[
-    Ekam by TestVagrant<br>
-    <em>Rapid automated tests development library for your Web, Mobile & REST applications.<br></em>
-    <em>Unify all of your test automation under a single repository.</em>
-    ]]></description>
+        Ekam by TestVagrant<br>
+        <em>Rapid automated tests development library for your Web, Mobile & REST applications.<br></em>
+        <em>Unify all of your test automation under a single repository.</em>
+        ]]></description>
 
 
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
@@ -16,13 +16,22 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
-        <moduleType id="EKAM_MODULE" implementationClass="com.testvagrant.sdk.module.EkamModuleType"/>
-        <moduleBuilder builderClass="com.testvagrant.sdk.module.EkamModuleBuilder"/>
+        <moduleType id="EKAM_MODULE" implementationClass="com.testvagrant.ekam.EkamModuleType"/>
+        <moduleBuilder builderClass="com.testvagrant.ekam.EkamModuleBuilder"/>
         <projectTemplate projectType="EKAM_MODULE" templatePath="/META-INF/ekam-template.zip"/>
+
+        <fileTemplateGroup implementation="com.testvagrant.ekam.fileTemplate.EkamFilesTemplateManager"/>
+
     </extensions>
 
     <actions>
-        <!-- Add your actions here -->
+        <action id="com.testvagrant.ekam.actions.CreateNewFileAction"
+                class="com.testvagrant.ekam.actions.CreateNewFileAction" text="Ekam Component"
+                description="Create new dataWeave">
+            <add-to-group group-id="NewGroup" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl W"/>
+        </action>
     </actions>
     <change-notes>First version of Ekam</change-notes>
+
 </idea-plugin>

@@ -1,4 +1,4 @@
-package com.testvagrant.sdk.module.icons;
+package com.testvagrant.ekam.icons;
 
 import com.intellij.openapi.util.IconLoader;
 

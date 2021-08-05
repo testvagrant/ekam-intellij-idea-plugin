@@ -1,4 +1,4 @@
-package com.testvagrant.sdk.module;
+package com.testvagrant.ekam;
 
 import com.intellij.ide.util.projectWizard.JavaModuleBuilder;
 import com.intellij.openapi.roots.ModifiableRootModel;

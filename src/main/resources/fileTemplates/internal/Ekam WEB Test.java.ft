@@ -1,0 +1,12 @@
+package com.testvagrant.sdk.module.filetypes;
+
+import com.testvagrant.ekam.testBases.testng.WebTest;
+import org.testng.annotations.Test;
+
+public class ${NAME} extends WebTest {
+
+    @Test(groups = "web")
+    public void webExampleTest() {
+
+    }
+}

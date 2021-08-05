@@ -1,9 +1,9 @@
-package com.testvagrant.sdk.module;
+package com.testvagrant.ekam;
 
 import com.intellij.openapi.module.JavaModuleType;
 import com.intellij.openapi.module.ModuleTypeManager;
 import com.intellij.openapi.util.IconLoader;
-import com.testvagrant.sdk.module.icons.EkamPluginIcons;
+import com.testvagrant.ekam.icons.EkamPluginIcons;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
