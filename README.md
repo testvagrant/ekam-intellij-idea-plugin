@@ -8,7 +8,8 @@ https://www.jetbrains.com/help/idea/saving-project-as-template.html
 
 3) Configuration directory
 
-~/Library/Application Support/JetBrains/<product><version>
+~/Library/Application Support/JetBrains/<product><version>/projectTemplates/
+~/Library/Application\ Support/JetBrains/IdeaIC2021.2/projectTemplates/
 
 
 4) Create a gradle, java and IntilliJ Platform plugin project
