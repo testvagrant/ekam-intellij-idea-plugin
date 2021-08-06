@@ -22,6 +22,9 @@
 
         <fileTemplateGroup implementation="com.testvagrant.ekam.fileTemplate.EkamFilesTemplateManager"/>
 
+        <defaultLiveTemplates file="/liveTemplates/EkamMarkdown.xml"/>
+        <liveTemplateContext implementation="com.testvagrant.ekam.liveTemplates.MarkdownContext"/>
+
     </extensions>
 
     <actions>
