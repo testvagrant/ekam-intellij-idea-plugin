@@ -1,7 +1,10 @@
 package com.testvagrant.sdk.module.filetypes;
 
 import com.testvagrant.ekam.testBases.testng.WebTest;
+import static com.testvagrant.ekam.commons.LayoutInitiator.*;
 import org.testng.annotations.Test;
+import static org.testng.Assert.*;
+
 
 public class ${NAME} extends WebTest {
 

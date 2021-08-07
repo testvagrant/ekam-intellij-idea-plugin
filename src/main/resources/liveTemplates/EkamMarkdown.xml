@@ -1,5 +1,5 @@
 <templateSet group="Ekam">
-  <template name="query" value="By $LOCATOR$ = query(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate a WebElement by CSS or XPath" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="query" value="private By $LOCATOR$ = query(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate a WebElement by CSS or XPath" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="LOCATOR" expression="camelCase(String)" defaultValue="&quot;locator&quot;" alwaysStopAt="true" />
     <variable name="SELECTOR" expression="camelCase(locator)" defaultValue="&quot;input[value='Google Search']&quot;" alwaysStopAt="true" />
     <context>
@@ -8,7 +8,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="qbn" value="By $LOCATOR$ = queryByName(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate a WebElement by name" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="qbn" value="private By $LOCATOR$ = queryByName(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate a WebElement by name" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="LOCATOR" expression="camelCase(String)" defaultValue="&quot;locator&quot;" alwaysStopAt="true" />
     <variable name="SELECTOR" expression="camelCase(locator)" defaultValue="&quot;q&quot;" alwaysStopAt="true" />
     <context>
@@ -17,7 +17,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="qbi" value="By $LOCATOR$ = queryById(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate a WebElement by id" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="qbi" value="private By $LOCATOR$ = queryById(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate a WebElement by id" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="LOCATOR" expression="camelCase(String)" defaultValue="&quot;locator&quot;" alwaysStopAt="true" />
     <variable name="SELECTOR" expression="camelCase(locator)" defaultValue="&quot;id&quot;" alwaysStopAt="true" />
     <context>
@@ -26,7 +26,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="qbc" value="By $LOCATOR$ = queryByClass(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate a WebElement by class name" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="qbc" value="private By $LOCATOR$ = queryByClass(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate a WebElement by class name" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="LOCATOR" expression="camelCase(String)" defaultValue="&quot;locator&quot;" alwaysStopAt="true" />
     <variable name="SELECTOR" expression="camelCase(locator)" defaultValue="&quot;class&quot;" alwaysStopAt="true" />
     <context>
@@ -35,7 +35,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="qbt" value="By $LOCATOR$ = queryByText(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate a WebElement by text (overload available)" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="qbt" value="private By $LOCATOR$ = queryByText(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate a WebElement by text (overload available)" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="LOCATOR" expression="camelCase(String)" defaultValue="&quot;locator&quot;" alwaysStopAt="true" />
     <variable name="SELECTOR" expression="camelCase(locator)" defaultValue="&quot;text&quot;" alwaysStopAt="true" />
     <context>
@@ -44,10 +44,52 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="qba" value="By $LOCATOR$ = queryByAttribute(&quot;$SELECTOR$&quot;, &quot;$VALUE$&quot;);$END$&#10;" description="locate a WebElement by attribute (overload available)" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="qba" value="private By $LOCATOR$ = queryByAttribute(&quot;$SELECTOR$&quot;, &quot;$VALUE$&quot;);$END$&#10;" description="locate a WebElement by attribute (overload available)" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="LOCATOR" expression="camelCase(String)" defaultValue="&quot;locator&quot;" alwaysStopAt="true" />
     <variable name="SELECTOR" expression="camelCase(locator)" defaultValue="&quot;attribute&quot;" alwaysStopAt="true" />
     <variable name="VALUE" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="test" value="@org.testng.annotations.Test(groups = &quot;$TAG$&quot;)&#10;public void should$NAME$() {&#10;  $END$&#10;}" description="Generate a TestNG test" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="NAME" expression="" defaultValue="&quot;TestSomething&quot;" alwaysStopAt="true" />
+    <variable name="TAG" expression="" defaultValue="&quot;SmokeTest&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="webstep" value="@WebStep(keyword = &quot;$GWT$&quot;, description = &quot;$STATEMENT$&quot;)&#10;public $RETURN$ $METHOD_NAME$() {&#10;    $END$&#10;    return this;&#10;}&#10;" description="Generate Ekam Web Step" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="GWT" expression="" defaultValue="&quot;When&quot;" alwaysStopAt="true" />
+    <variable name="STATEMENT" expression="" defaultValue="&quot;I search for quey&quot;" alwaysStopAt="true" />
+    <variable name="METHOD_NAME" expression="" defaultValue="&quot;search&quot;" alwaysStopAt="true" />
+    <variable name="RETURN" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="apistep" value="@APIStep(keyword = &quot;$GWT$&quot;, description = &quot;$STATEMENT$&quot;)&#10;public $RETURN$ $METHOD_NAME$() {&#10;    $END$&#10;    return this;&#10;}&#10;" description="Generate Ekam Web Step" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="GWT" expression="" defaultValue="&quot;When&quot;" alwaysStopAt="true" />
+    <variable name="STATEMENT" expression="" defaultValue="&quot;I search for quey&quot;" alwaysStopAt="true" />
+    <variable name="METHOD_NAME" expression="" defaultValue="&quot;search&quot;" alwaysStopAt="true" />
+    <variable name="RETURN" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="mobilestep" value="@MobileStep(keyword = &quot;$GWT$&quot;, description = &quot;$STATEMENT$&quot;)&#10;public $RETURN$ $METHOD_NAME$() {&#10;    $END$&#10;    return this;&#10;}&#10;" description="Generate Ekam Web Step" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="GWT" expression="" defaultValue="&quot;When&quot;" alwaysStopAt="true" />
+    <variable name="STATEMENT" expression="" defaultValue="&quot;I search for quey&quot;" alwaysStopAt="true" />
+    <variable name="METHOD_NAME" expression="" defaultValue="&quot;search&quot;" alwaysStopAt="true" />
+    <variable name="RETURN" expression="className()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_DECLARATION" value="true" />
       <option name="JAVA_EXPRESSION" value="true" />

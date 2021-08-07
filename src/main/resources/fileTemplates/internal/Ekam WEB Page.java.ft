@@ -1,0 +1,15 @@
+package com.testvagrant.sdk.module.filetypes;
+
+import com.testvagrant.ekam.reports.annotations.WebStep;
+import com.testvagrant.ekam.web.WebPage;
+import org.openqa.selenium.By;
+import static org.testng.Assert.*;
+
+public class ${NAME} extends WebPage {
+
+    @WebStep(keyword = "When", description = "I hit search button")
+    public ${NAME} search() {
+        return this;
+    }
+
+}

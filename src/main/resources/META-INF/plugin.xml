@@ -36,11 +36,11 @@
         </action>
 
 <!--        This generates code but need just like live template-->
-        <action id="com.testvagrant.ekam.popupAction.EkamWebStepGenerateAction"
-                class="com.testvagrant.ekam.popupAction.EkamWebStepGenerateAction" text="Ekam Web Step"
-                description="Generates a Page class method">
-            <add-to-group group-id="GenerateGroup" anchor="first"/>
-        </action>
+<!--        <action id="com.testvagrant.ekam.popupAction.EkamWebStepGenerateAction"-->
+<!--                class="com.testvagrant.ekam.popupAction.EkamWebStepGenerateAction" text="Ekam Web Step"-->
+<!--                description="Generates a Page class method">-->
+<!--            <add-to-group group-id="GenerateGroup" anchor="first"/>-->
+<!--        </action>-->
 
     </actions>
     <change-notes>First version of Ekam</change-notes>

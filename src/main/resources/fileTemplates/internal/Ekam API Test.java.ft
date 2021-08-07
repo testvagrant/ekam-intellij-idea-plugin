@@ -1,7 +1,9 @@
 package com.testvagrant.sdk.module.filetypes;
 
 import com.testvagrant.ekam.testBases.testng.APITest;
+import static com.testvagrant.ekam.commons.LayoutInitiator.*;
 import org.testng.annotations.Test;
+import static org.testng.Assert.*;
 
 public class ${NAME} extends APITest {
 

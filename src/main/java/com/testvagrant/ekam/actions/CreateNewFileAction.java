@@ -20,7 +20,9 @@ public class CreateNewFileAction extends CreateFileFromTemplateAction implements
         builder.setTitle("Ekam Component")
                 .addKind("API Test", EkamPluginIcons.ProjectType, EkamFilesTemplateManager.API_TEST_FILE)
                 .addKind("Web Test", EkamPluginIcons.ProjectType, EkamFilesTemplateManager.WEB_TEST_FILE)
-                .addKind("Mobile Test", EkamPluginIcons.ProjectType, EkamFilesTemplateManager.MOBILE_TEST_FILE);
+                .addKind("Mobile Test", EkamPluginIcons.ProjectType, EkamFilesTemplateManager.MOBILE_TEST_FILE)
+                .addKind("Page class - Web", EkamPluginIcons.ProjectType, EkamFilesTemplateManager.WEB_PAGE_FILE)
+                .addKind("Screen class - Mobile", EkamPluginIcons.ProjectType, EkamFilesTemplateManager.MOBILE_SCREEN_FILE);
     }
 
     @Override
