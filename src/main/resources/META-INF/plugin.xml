@@ -13,6 +13,15 @@
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
          on how to target different products -->
     <depends>com.intellij.modules.java</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.remoteServers</depends>
+    <depends>com.intellij.modules.json</depends>
+<!--    <depends>com.intellij.modules.idea</depends>-->
+<!--    <depends optional="true" config-file="b">intellij.clouds.docker.ssh</depends>-->
+<!--    <depends optional="true" config-file="c">intellij.clouds.docker.remoteRun</depends>-->
+<!--    <depends optional="true" config-file="d">intellij.clouds.docker.java</depends>-->
+<!--    <depends optional="true" config-file="e">intellij.clouds.docker.file</depends>-->
+<!--    <depends optional="true" config-file="f">intellij.clouds.docker.compose</depends>-->
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
@@ -43,6 +52,6 @@
 <!--        </action>-->
 
     </actions>
-    <change-notes>First version of Ekam</change-notes>
+    <change-notes>Live templates to generate selectors. Included RoboPojoGenerator and Docker Plugin. Added File templates to generate page classes for web and mobile.</change-notes>
 
 </idea-plugin>
