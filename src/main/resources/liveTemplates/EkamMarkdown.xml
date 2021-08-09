@@ -59,8 +59,6 @@
     <variable name="TAG" expression="" defaultValue="&quot;SmokeTest&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_EXPRESSION" value="true" />
-      <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
   <template name="webstep" value="@WebStep(keyword = &quot;$GWT$&quot;, description = &quot;$STATEMENT$&quot;)&#10;public $RETURN$ $METHOD_NAME$() {&#10;    $END$&#10;    return this;&#10;}&#10;" description="Generate Ekam Web Step" toReformat="true" toShortenFQNames="true" useStaticImport="true">
@@ -70,8 +68,6 @@
     <variable name="RETURN" expression="className()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_EXPRESSION" value="true" />
-      <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
   <template name="apistep" value="@APIStep(keyword = &quot;$GWT$&quot;, description = &quot;$STATEMENT$&quot;)&#10;public $RETURN$ $METHOD_NAME$() {&#10;    $END$&#10;    return this;&#10;}&#10;" description="Generate Ekam Web Step" toReformat="true" toShortenFQNames="true" useStaticImport="true">
@@ -81,8 +77,6 @@
     <variable name="RETURN" expression="className()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_EXPRESSION" value="true" />
-      <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
   <template name="mobilestep" value="@MobileStep(keyword = &quot;$GWT$&quot;, description = &quot;$STATEMENT$&quot;)&#10;public $RETURN$ $METHOD_NAME$() {&#10;    $END$&#10;    return this;&#10;}&#10;" description="Generate Ekam Web Step" toReformat="true" toShortenFQNames="true" useStaticImport="true">
@@ -92,8 +86,176 @@
     <variable name="RETURN" expression="className()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_EXPRESSION" value="true" />
-      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="web.url" value="web.url:$URL$" description="Web url for selenium tests" toReformat="false" toShortenFQNames="true">
+    <variable name="URL" expression="" defaultValue="&quot;www.my.url.com&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="web.hub" value="web.hub:$HUB$" description="Hub file name under resources" toReformat="false" toShortenFQNames="true">
+    <variable name="HUB" expression="" defaultValue="&quot;FileNameOfHub&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="dashboard.url" value="dashboard.url:$DASH_URL$" description="Ekam dashboard url. eg: http://localhost:8090/" toReformat="false" toShortenFQNames="true">
+    <variable name="DASH_URL" expression="" defaultValue="&quot;Ekam Dashboard url&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="web.feed" value="web.feed:$WEB_FEED$" description="Web Feed file name under resources" toReformat="false" toShortenFQNames="true">
+    <variable name="WEB_FEED" expression="" defaultValue="&quot;FileNameOfWebFeed&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="web.target" value="web.target:$WEB_TARGET$" description="Choose responsive for responsive test execution" toReformat="false" toShortenFQNames="true">
+    <variable name="WEB_TARGET" expression="" defaultValue="&quot;responsive&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="mobile.feed" value="mobile.feed:$MOBILE_FEED$" description="Mobile Feed file name under resources" toReformat="false" toShortenFQNames="true">
+    <variable name="MOBILE_FEED" expression="" defaultValue="&quot;FileNameOfMobileFeed&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="mobile.target" value="mobile.target:$MOBILE_TARGET$" description="Target mobile platform eg: android | ios" toReformat="false" toShortenFQNames="true">
+    <variable name="MOBILE_TARGET" expression="" defaultValue="&quot;android&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="mobile.server.args" value="mobile.server.args:$MOBILE_SERVER_ARGS$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="MOBILE_SERVER_ARGS" expression="" defaultValue="&quot;appiumserver&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="datasets.dir" value="datasets.dir:$DATASETS_DIR$" description="Folder name under resources having data" toReformat="false" toShortenFQNames="true">
+    <variable name="DATASETS_DIR" expression="" defaultValue="&quot;datasets&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="datasets.env" value="datasets.env:$DATASETS_ENV$" description="Folder name under resources having data for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
+    <variable name="DATASETS_ENV" expression="" defaultValue="&quot;UAT&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
     </context>
   </template>
 </templateSet>

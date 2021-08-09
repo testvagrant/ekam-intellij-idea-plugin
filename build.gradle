@@ -23,7 +23,7 @@ intellij {
 }
 patchPluginXml {
     changeNotes = """
-      Created project template.<br>
+      Live templates to generate properties<br>
       """
 }
 test {
