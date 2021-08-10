@@ -88,7 +88,7 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="web.url" value="web.url:$URL$" description="Web url for selenium tests" toReformat="false" toShortenFQNames="true">
+  <template name="web.url" value="# Web url of web application under test&#10;web.url:$URL$" description="Web url for selenium tests" toReformat="false" toShortenFQNames="true">
     <variable name="URL" expression="" defaultValue="&quot;www.my.url.com&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -105,7 +105,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="web.hub" value="web.hub:$HUB$" description="Hub file name under resources" toReformat="false" toShortenFQNames="true">
+  <template name="web.hub" value="# Cloud provider eg: browserstack | kobiton | etc&#10;web.hub:$HUB$" description="Hub file name under resources" toReformat="false" toShortenFQNames="true">
     <variable name="HUB" expression="" defaultValue="&quot;FileNameOfHub&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -122,7 +122,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="dashboard.url" value="dashboard.url:$DASH_URL$" description="Ekam dashboard url. eg: http://localhost:8090/" toReformat="false" toShortenFQNames="true">
+  <template name="dashboard.url" value="# Ekam dashboard url. eg: http://localhost:8090/&#10;dashboard.url:$DASH_URL$" description="Ekam dashboard url. eg: http://localhost:8090/" toReformat="false" toShortenFQNames="true">
     <variable name="DASH_URL" expression="" defaultValue="&quot;Ekam Dashboard url&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -139,7 +139,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="web.feed" value="web.feed:$WEB_FEED$" description="Web Feed file name under resources" toReformat="false" toShortenFQNames="true">
+  <template name="web.feed" value="# Feed file having desiredCapabilities, arguments etc&#10;web.feed:$WEB_FEED$" description="Web Feed file name under resources" toReformat="false" toShortenFQNames="true">
     <variable name="WEB_FEED" expression="" defaultValue="&quot;FileNameOfWebFeed&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -156,7 +156,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="web.target" value="web.target:$WEB_TARGET$" description="Choose responsive for responsive test execution" toReformat="false" toShortenFQNames="true">
+  <template name="web.target" value="# Choose responsive for responsive test execution&#10;web.target:$WEB_TARGET$" description="Choose responsive for responsive test execution" toReformat="false" toShortenFQNames="true">
     <variable name="WEB_TARGET" expression="" defaultValue="&quot;responsive&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -173,7 +173,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="mobile.feed" value="mobile.feed:$MOBILE_FEED$" description="Mobile Feed file name under resources" toReformat="false" toShortenFQNames="true">
+  <template name="mobile.feed" value="# Feed file having desiredCapabilities&#10;mobile.feed:$MOBILE_FEED$" description="Mobile Feed file name under resources" toReformat="false" toShortenFQNames="true">
     <variable name="MOBILE_FEED" expression="" defaultValue="&quot;FileNameOfMobileFeed&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -190,7 +190,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="mobile.target" value="mobile.target:$MOBILE_TARGET$" description="Target mobile platform eg: android | ios" toReformat="false" toShortenFQNames="true">
+  <template name="mobile.target" value="# Target mobile platform eg: android | ios&#10;mobile.target:$MOBILE_TARGET$" description="Target mobile platform eg: android | ios" toReformat="false" toShortenFQNames="true">
     <variable name="MOBILE_TARGET" expression="" defaultValue="&quot;android&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -224,7 +224,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="datasets.dir" value="datasets.dir:$DATASETS_DIR$" description="Folder name under resources having data" toReformat="false" toShortenFQNames="true">
+  <template name="datasets.dir" value="# Folder name under resources having data&#10;datasets.dir:$DATASETS_DIR$" description="Folder name under resources having data" toReformat="false" toShortenFQNames="true">
     <variable name="DATASETS_DIR" expression="" defaultValue="&quot;datasets&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -241,7 +241,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="datasets.env" value="datasets.env:$DATASETS_ENV$" description="Folder name under resources having data for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
+  <template name="datasets.env" value="# Folder name under resources having data for specific environment eg: UAT | PREPROD | QA&#10;datasets.env:$DATASETS_ENV$" description="Folder name under resources having data for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
     <variable name="DATASETS_ENV" expression="" defaultValue="&quot;UAT&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
