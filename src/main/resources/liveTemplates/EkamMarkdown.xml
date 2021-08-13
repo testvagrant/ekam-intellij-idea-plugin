@@ -343,7 +343,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="datasets.env" value="# Folder name under resources having data for specific environment eg: UAT | PREPROD | QA&#10;datasets.env:$DATASETS_ENV$" description="Folder name under resources having data for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
+  <template name="datasets.env" value="# Folder name under datasets.dir having data for specific environment eg: UAT | PREPROD | QA&#10;datasets.env:$DATASETS_ENV$" description="Folder name under resources having data for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
     <variable name="DATASETS_ENV" expression="" defaultValue="&quot;UAT&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -413,6 +413,108 @@
   </template>
   <template name="api.hosts" value="# File with API host details under resources&#10;api.hosts:$HOSTS_FILE$" description="File with API host details under resources" toReformat="false" toShortenFQNames="true">
     <variable name="HOSTS_FILE" expression="" defaultValue="&quot;APIHosts&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="db.drivers" value="# DB Drivers&#10;api.hosts:$DB_DRIVERS$" description="DB drivers" toReformat="false" toShortenFQNames="true">
+    <variable name="DB_DRIVERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="api.env" value="# Folder name under resources having api hosts for specific environment eg: UAT | PREPROD | QA&#10;api.env:$API_ENV$" description="Folder name under resources having api hosts for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
+    <variable name="API_ENV" expression="" defaultValue="&quot;UAT&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="web.env" value="# Folder name under resources having web app properties for specific environment eg: UAT | PREPROD | QA&#10;web.env:$WEB_ENV$" description="Folder name under resources having web app properties for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
+    <variable name="WEB_ENV" expression="" defaultValue="&quot;UAT&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="mobile.env" value="# Folder name under resources having mobile app properties for specific environment eg: UAT | PREPROD | QA&#10;mobile.env:$MOBILE_ENV$" description="Folder name under resources having mobile app properties for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
+    <variable name="MOBILE_ENV" expression="" defaultValue="&quot;UAT&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="locale.env" value="# Folder name under resources having locale data for specific environment eg: UAT | PREPROD | QA&#10;locale.env:$LOCALE_ENV$" description="Folder name under resources having locale data for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
+    <variable name="LOCALE_ENV" expression="" defaultValue="&quot;UAT&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="db.env" value="# Folder name under resources having database details for specific environment eg: UAT | PREPROD | QA&#10;db.env:$DB_ENV$" description="Folder name under resources having database details for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
+    <variable name="DB_ENV" expression="" defaultValue="&quot;UAT&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="GAUGE" value="false" />
