@@ -360,4 +360,38 @@
       <option name="XML" value="false" />
     </context>
   </template>
+  <template name="locale.dir" value="# Folder name under resources having locale data&#10;locale.dir:$LOCALE_DIR$" description="Folder name under resources having locale data" toReformat="false" toShortenFQNames="true">
+    <variable name="LOCALE_DIR" expression="" defaultValue="&quot;locale_data&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="locale" value="# Locale for runtime&#10;locale:$LOCALE$" description="Locale for runtime" toReformat="false" toShortenFQNames="true">
+    <variable name="LOCALE" expression="" defaultValue="&quot;en&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
 </templateSet>
