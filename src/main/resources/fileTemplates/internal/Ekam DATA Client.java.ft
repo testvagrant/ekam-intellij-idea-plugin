@@ -1,0 +1,31 @@
+package com.testvagrant.sdk.module.filetypes;
+
+import com.testvagrant.ekam.commons.data.DataSetsClient;
+
+public class ${NAME} extends DataSetsClient {
+
+  /*
+  // Assuming the addresses.json to be :
+
+  {
+  "default_address": [
+    {
+      "firstName": "Hari",
+      "city": "Bangalore",
+      "pinCode": "11001",
+    }
+  }
+
+   // Sample DataClient implementation would be:
+
+    public class AddressDataClient extends DataSetsClient {
+      public Address getDefaultAddress() {
+        return getAddress(DataKeys.DEFAULT_ADDRESS);
+      }
+
+      public static class DataKeys {
+        public static final String DEFAULT_ADDRESS = "default_address";
+      }
+    }
+   */
+}

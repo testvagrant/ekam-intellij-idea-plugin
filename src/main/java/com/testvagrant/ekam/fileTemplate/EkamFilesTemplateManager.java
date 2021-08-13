@@ -14,6 +14,8 @@ public class EkamFilesTemplateManager implements FileTemplateGroupDescriptorFact
     public static final String WEB_PAGE_FILE = "Ekam WEB Page";
     public static final String MOBILE_SCREEN_FILE = "Ekam MOBILE Screen";
 
+    public static final String DATA_CLIENT = "Ekam DATA Client";
+
     @Override
     public FileTemplateGroupDescriptor getFileTemplatesDescriptor() {
         FileTemplateGroupDescriptor descriptor = new FileTemplateGroupDescriptor("Ekam files", EkamPluginIcons.ProjectType);
@@ -22,6 +24,7 @@ public class EkamFilesTemplateManager implements FileTemplateGroupDescriptorFact
         descriptor.addTemplate(new FileTemplateDescriptor(MOBILE_TEST_FILE, EkamPluginIcons.ProjectType));
         descriptor.addTemplate(new FileTemplateDescriptor(WEB_PAGE_FILE, EkamPluginIcons.ProjectType));
         descriptor.addTemplate(new FileTemplateDescriptor(MOBILE_SCREEN_FILE, EkamPluginIcons.ProjectType));
+        descriptor.addTemplate(new FileTemplateDescriptor(DATA_CLIENT, EkamPluginIcons.ProjectType));
         return descriptor;
     }
 

@@ -22,7 +22,8 @@ public class CreateNewFileAction extends CreateFileFromTemplateAction implements
                 .addKind("Web Test", EkamPluginIcons.ProjectType, EkamFilesTemplateManager.WEB_TEST_FILE)
                 .addKind("Mobile Test", EkamPluginIcons.ProjectType, EkamFilesTemplateManager.MOBILE_TEST_FILE)
                 .addKind("Page class - Web", EkamPluginIcons.ProjectType, EkamFilesTemplateManager.WEB_PAGE_FILE)
-                .addKind("Screen class - Mobile", EkamPluginIcons.ProjectType, EkamFilesTemplateManager.MOBILE_SCREEN_FILE);
+                .addKind("Screen class - Mobile", EkamPluginIcons.ProjectType, EkamFilesTemplateManager.MOBILE_SCREEN_FILE)
+                .addKind("Data Client", EkamPluginIcons.ProjectType, EkamFilesTemplateManager.DATA_CLIENT);
     }
 
     @Override
