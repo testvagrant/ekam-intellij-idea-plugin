@@ -105,7 +105,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="web.hub" value="# Cloud provider eg: browserstack | kobiton | etc&#10;web.hub:$HUB$" description="Hub file name under resources to execute tests on cloud or grid" toReformat="false" toShortenFQNames="true">
+  <template name="web.hub" value="# Cloud provider eg: browserstack | saucelabs | etc&#10;web.hub:$HUB$" description="Hub file name under resources to execute tests on cloud or grid" toReformat="false" toShortenFQNames="true">
     <variable name="HUB" expression="" defaultValue="&quot;FileNameHavingHubConfiguration&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -226,6 +226,91 @@
   </template>
   <template name="mobile.server.args" value="mobile.server.args:$MOBILE_SERVER_ARGS$" description="" toReformat="false" toShortenFQNames="true">
     <variable name="MOBILE_SERVER_ARGS" expression="" defaultValue="&quot;appiumserver&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="mobile.hub" value="# cloud provider eg: browserstack | kobiton | etc&#10;mobile.hub:$HUB$" description="Hub file name under resources" toReformat="false" toShortenFQNames="true">
+    <variable name="HUB" expression="" defaultValue="&quot;FileNameOfHub&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="mobile.remote.uploadapp" value="# Upload app before execution &lt;true | false&gt;&#10;mobile.remote.uploadapp:$TRUE$" description="Upload app before execution" toReformat="false" toShortenFQNames="true">
+    <variable name="TRUE" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="mobile.app.name" value="# Name of mobile app under app folder&#10;mobile.app.name:$NAME$" description="Name of mobile app under app folder" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;MyApp&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="mobile.filters" value="# Filters to chose devices for test execution&#10;mobile.filters:$FILTERS$" description="Filters to chose devices for test execution" toReformat="false" toShortenFQNames="true">
+    <variable name="FILTERS" expression="" defaultValue="&quot;android&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="mobile.executables" value="# mobile.executables&#10;mobile.filters:$EXECUTABLES$" description="Mobile executables" toReformat="false" toShortenFQNames="true">
+    <variable name="EXECUTABLES" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="GAUGE" value="false" />
