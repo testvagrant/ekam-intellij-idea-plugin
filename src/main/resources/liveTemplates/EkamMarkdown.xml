@@ -530,4 +530,14 @@
       <option name="XML" value="false" />
     </context>
   </template>
+  <template name="mpf" value="private MultiPlatformFinder $LOCATOR$ = finder(queryByContentDesc(&quot;$SELECTOR1$&quot;), queryByName(&quot;$SELECTOR2$&quot;));" description="Declare locators for multiple platforms. Ex: Andoid and iOS" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="LOCATOR" expression="camelCase(String)" defaultValue="&quot;locator&quot;" alwaysStopAt="true" />
+    <variable name="SELECTOR1" expression="" defaultValue="&quot;test-Username&quot;" alwaysStopAt="true" />
+    <variable name="SELECTOR2" expression="" defaultValue="&quot;test-Username&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
