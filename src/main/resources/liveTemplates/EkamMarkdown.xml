@@ -105,8 +105,8 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="web.hub" value="# Cloud provider eg: browserstack | kobiton | etc&#10;web.hub:$HUB$" description="Hub file name under resources" toReformat="false" toShortenFQNames="true">
-    <variable name="HUB" expression="" defaultValue="&quot;FileNameOfHub&quot;" alwaysStopAt="true" />
+  <template name="web.hub" value="# Cloud provider eg: browserstack | kobiton | etc&#10;web.hub:$HUB$" description="Hub file name under resources to execute tests on cloud or grid" toReformat="false" toShortenFQNames="true">
+    <variable name="HUB" expression="" defaultValue="&quot;FileNameHavingHubConfiguration&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="GAUGE" value="false" />
@@ -139,8 +139,25 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="web.feed" value="# Feed file having desiredCapabilities, arguments etc&#10;web.feed:$WEB_FEED$" description="Web Feed file name under resources" toReformat="false" toShortenFQNames="true">
+  <template name="web.feed" value="# Feed file having desiredCapabilities, arguments etc&#10;web.feed:$WEB_FEED$" description="Feed file name under resources having desiredCapabilities, arguments etc" toReformat="false" toShortenFQNames="true">
     <variable name="WEB_FEED" expression="" defaultValue="&quot;FileNameOfWebFeed&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="web.headless" value="# Set true to execute tests in headless mode&#10;web.headless:$HEADLESS$" description="Set true to execute tests in headless mode" toReformat="false" toShortenFQNames="true">
+    <variable name="HEADLESS" expression="" defaultValue="&quot;false&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="GAUGE" value="false" />
