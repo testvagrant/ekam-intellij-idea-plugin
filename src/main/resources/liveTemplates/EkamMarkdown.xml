@@ -394,4 +394,38 @@
       <option name="XML" value="false" />
     </context>
   </template>
+  <template name="cloud.config.dir" value="# Folder name under resources having cloud configurations&#10;cloud.config.dir:$CLOUD_CONFIG_DIR$" description="Folder name under resources having cloud configurations" toReformat="false" toShortenFQNames="true">
+    <variable name="CLOUD_CONFIG_DIR" expression="" defaultValue="&quot;cloud_config&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="api.hosts" value="# File with API host details under resources&#10;api.hosts:$HOSTS_FILE$" description="File with API host details under resources" toReformat="false" toShortenFQNames="true">
+    <variable name="HOSTS_FILE" expression="" defaultValue="&quot;APIHosts&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
 </templateSet>
