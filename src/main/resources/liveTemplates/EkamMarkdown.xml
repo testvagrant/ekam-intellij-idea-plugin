@@ -122,6 +122,23 @@
       <option name="XML" value="false" />
     </context>
   </template>
+  <template name="web.console.log" value="# Enable/Disable web console log&#10;web.console.log:$WEB_CONSOLE_LOG$" description="Enable/Disable web console log" toReformat="false" toShortenFQNames="true">
+    <variable name="WEB_CONSOLE_LOG" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
   <template name="dashboard.url" value="# Ekam dashboard url. eg: http://localhost:8090/&#10;dashboard.url:$DASH_URL$" description="Ekam dashboard url. eg: http://localhost:8090/" toReformat="false" toShortenFQNames="true">
     <variable name="DASH_URL" expression="" defaultValue="&quot;Ekam Dashboard url&quot;" alwaysStopAt="true" />
     <context>
@@ -538,6 +555,57 @@
       <option name="JAVA_DECLARATION" value="true" />
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="log.types" value="# Logging types &lt;console|file|console,file|none&gt;&#10;log.types:$LOG_TYPES$" description="Logging types &lt;console|file|console,file|none&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="LOG_TYPES" expression="" defaultValue="&quot;console,file&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="log.console.level" value="# Console logging level &lt;info|debug&gt;&#10;log.console.level:$LOG_LEVEL$" description="# Console logging level &lt;info|debug&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="LOG_LEVEL" expression="" defaultValue="&quot;debug&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="log.file.level" value="# File logging level &lt;info|debug&gt;&#10;log.file.level:$LOG_LEVEL$" description="# File logging level &lt;info|debug&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="LOG_LEVEL" expression="" defaultValue="&quot;debug&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
     </context>
   </template>
 </templateSet>

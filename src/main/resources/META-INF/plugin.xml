@@ -47,6 +47,7 @@
 
     </actions>
     <change-notes>
+        Version 1.0.3 : Live templates logging related properties
         Version 1.0.2 : Live templates for all properties and Multi Platform Finder
         Version 1.0.1 : Live templates to generate properties.
         Version 1.0 : Live templates to generate selectors. Included RoboPojoGenerator and Docker Plugin. Added File templates to generate page classes for web and mobile.
