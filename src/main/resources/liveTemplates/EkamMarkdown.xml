@@ -173,7 +173,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="web.target" value="# Choose responsive for responsive test execution&#10;web.target:$WEB_TARGET$" description="Choose responsive for responsive test execution" toReformat="false" toShortenFQNames="true">
+  <template name="web.target" value="# Target Browser. Supported values <any | chrome | firefox | msedge>&#10;web.target:$WEB_TARGET$" description="Target Browser. Supported values <any | chrome | firefox | msedge>" toReformat="false" toShortenFQNames="true">
     <variable name="WEB_TARGET" expression="" defaultValue="&quot;responsive&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
