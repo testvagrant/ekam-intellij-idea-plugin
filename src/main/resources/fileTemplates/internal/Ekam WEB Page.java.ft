@@ -1,7 +1,7 @@
 package com.testvagrant.sdk.module.filetypes;
 
 import com.testvagrant.ekam.reports.annotations.WebStep;
-import com.testvagrant.ekam.web.WebPage;
+import com.testvagrant.ekam.atoms.web.WebPage;
 import org.openqa.selenium.By;
 
 public class ${NAME} extends WebPage {

@@ -16,6 +16,8 @@
     <depends>com.intellij.modules.lang</depends>
     <depends>com.intellij.modules.remoteServers</depends>
     <depends>com.intellij.modules.json</depends>
+    <depends>Docker</depends>
+    <depends>com.robohorse.robopojogenerator</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
@@ -47,6 +49,7 @@
 
     </actions>
     <change-notes>
+        Version 1.0.4 : Fixed Plugin installation issues
         Version 1.0.3 : Live templates logging related properties
         Version 1.0.2 : Live templates for all properties and Multi Platform Finder
         Version 1.0.1 : Live templates to generate properties.

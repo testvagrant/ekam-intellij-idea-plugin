@@ -1,5 +1,5 @@
 <templateSet group="Ekam">
-  <template name="query" value="private By $LOCATOR$ = query(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate a WebElement by CSS or XPath" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="query" value="private By $LOCATOR$ = query(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate an element by CSS or XPath" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="LOCATOR" expression="camelCase(String)" defaultValue="&quot;locator&quot;" alwaysStopAt="true" />
     <variable name="SELECTOR" expression="camelCase(locator)" defaultValue="&quot;input[value='Google Search']&quot;" alwaysStopAt="true" />
     <context>
@@ -8,7 +8,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="qbn" value="private By $LOCATOR$ = queryByName(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate a WebElement by name" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="qbn" value="private By $LOCATOR$ = queryByName(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate an element by name" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="LOCATOR" expression="camelCase(String)" defaultValue="&quot;locator&quot;" alwaysStopAt="true" />
     <variable name="SELECTOR" expression="camelCase(locator)" defaultValue="&quot;q&quot;" alwaysStopAt="true" />
     <context>
@@ -17,7 +17,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="qbi" value="private By $LOCATOR$ = queryById(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate a WebElement by id" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="qbi" value="private By $LOCATOR$ = queryById(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate an element by id" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="LOCATOR" expression="camelCase(String)" defaultValue="&quot;locator&quot;" alwaysStopAt="true" />
     <variable name="SELECTOR" expression="camelCase(locator)" defaultValue="&quot;id&quot;" alwaysStopAt="true" />
     <context>
@@ -26,7 +26,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="qbc" value="private By $LOCATOR$ = queryByClass(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate a WebElement by class name" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="qbc" value="private By $LOCATOR$ = queryByClass(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate an element by class name" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="LOCATOR" expression="camelCase(String)" defaultValue="&quot;locator&quot;" alwaysStopAt="true" />
     <variable name="SELECTOR" expression="camelCase(locator)" defaultValue="&quot;class&quot;" alwaysStopAt="true" />
     <context>
@@ -35,7 +35,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="qbt" value="private By $LOCATOR$ = queryByText(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate a WebElement by text (overload available)" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="qbt" value="private By $LOCATOR$ = queryByText(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate an element by text (overload available)" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="LOCATOR" expression="camelCase(String)" defaultValue="&quot;locator&quot;" alwaysStopAt="true" />
     <variable name="SELECTOR" expression="camelCase(locator)" defaultValue="&quot;text&quot;" alwaysStopAt="true" />
     <context>
@@ -44,7 +44,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="qba" value="private By $LOCATOR$ = queryByAttribute(&quot;$SELECTOR$&quot;, &quot;$VALUE$&quot;);$END$&#10;" description="locate a WebElement by attribute (overload available)" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="qba" value="private By $LOCATOR$ = queryByAttribute(&quot;$SELECTOR$&quot;, &quot;$VALUE$&quot;);$END$&#10;" description="locate an element by attribute value (overload available)" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="LOCATOR" expression="camelCase(String)" defaultValue="&quot;locator&quot;" alwaysStopAt="true" />
     <variable name="SELECTOR" expression="camelCase(locator)" defaultValue="&quot;attribute&quot;" alwaysStopAt="true" />
     <variable name="VALUE" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true" />
@@ -88,7 +88,7 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="web.url" value="# Web url of web application under test&#10;web.url:$URL$" description="Web url for selenium tests" toReformat="false" toShortenFQNames="true">
+  <template name="web.url" value="# Web url of web application under test&#10;web.url: $URL$" description="Web url for selenium tests" toReformat="false" toShortenFQNames="true">
     <variable name="URL" expression="" defaultValue="&quot;www.my.url.com&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -105,7 +105,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="web.hub" value="# Cloud provider eg: browserstack | saucelabs | etc&#10;web.hub:$HUB$" description="Hub file name under resources to execute tests on cloud or grid" toReformat="false" toShortenFQNames="true">
+  <template name="web.hub" value="# Cloud provider eg: browserstack | saucelabs | etc&#10;web.hub: $HUB$" description="Hub file name under resources to execute tests on cloud or grid" toReformat="false" toShortenFQNames="true">
     <variable name="HUB" expression="" defaultValue="&quot;FileNameHavingHubConfiguration&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -122,7 +122,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="web.console.log" value="# Enable/Disable web console log&#10;web.console.log:$WEB_CONSOLE_LOG$" description="Enable/Disable web console log" toReformat="false" toShortenFQNames="true">
+  <template name="web.console.log" value="# Enable/Disable web console log&#10;web.console.log: $WEB_CONSOLE_LOG$" description="Enable/Disable web console log" toReformat="false" toShortenFQNames="true">
     <variable name="WEB_CONSOLE_LOG" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -139,7 +139,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="dashboard.url" value="# Ekam dashboard url. eg: http://localhost:8090/&#10;dashboard.url:$DASH_URL$" description="Ekam dashboard url. eg: http://localhost:8090/" toReformat="false" toShortenFQNames="true">
+  <template name="dashboard.url" value="# Ekam dashboard url. eg: http://localhost:8090/&#10;dashboard.url: $DASH_URL$" description="Ekam dashboard url. eg: http://localhost:8090/" toReformat="false" toShortenFQNames="true">
     <variable name="DASH_URL" expression="" defaultValue="&quot;Ekam Dashboard url&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -156,7 +156,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="web.feed" value="# Feed file having desiredCapabilities, arguments etc&#10;web.feed:$WEB_FEED$" description="Feed file name under resources having desiredCapabilities, arguments etc" toReformat="false" toShortenFQNames="true">
+  <template name="web.feed" value="# Feed file having desiredCapabilities, arguments etc&#10;web.feed: $WEB_FEED$" description="Feed file name under resources having desiredCapabilities, arguments etc" toReformat="false" toShortenFQNames="true">
     <variable name="WEB_FEED" expression="" defaultValue="&quot;FileNameOfWebFeed&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -173,7 +173,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="web.headless" value="# Set true to execute tests in headless mode&#10;web.headless:$HEADLESS$" description="Set true to execute tests in headless mode" toReformat="false" toShortenFQNames="true">
+  <template name="web.headless" value="# Set true to execute tests in headless mode&#10;web.headless: $HEADLESS$" description="Set true to execute tests in headless mode" toReformat="false" toShortenFQNames="true">
     <variable name="HEADLESS" expression="" defaultValue="&quot;false&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -190,7 +190,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="web.target" value="# Target Browser. Supported values &lt;any | chrome | firefox | msedge&gt;&#10;web.target:$WEB_TARGET$" description="Target Browser. Supported values &lt;any | chrome | firefox | msedge&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="web.target" value="# Target Browser. Supported values &lt;any | chrome | firefox | msedge | responsive&gt;&#10;web.target: $WEB_TARGET$" description="Target Browser. Supported values &lt;any | chrome | firefox | msedge | responsive&gt;" toReformat="false" toShortenFQNames="true">
     <variable name="WEB_TARGET" expression="" defaultValue="&quot;responsive&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -207,7 +207,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="mobile.feed" value="# Feed file having desiredCapabilities&#10;mobile.feed:$MOBILE_FEED$" description="Mobile Feed file name under resources" toReformat="false" toShortenFQNames="true">
+  <template name="mobile.feed" value="# Feed file having desiredCapabilities&#10;mobile.feed: $MOBILE_FEED$" description="Mobile Feed file name under resources" toReformat="false" toShortenFQNames="true">
     <variable name="MOBILE_FEED" expression="" defaultValue="&quot;FileNameOfMobileFeed&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -224,7 +224,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="mobile.target" value="# Target mobile platform eg: android | ios&#10;mobile.target:$MOBILE_TARGET$" description="Target mobile platform eg: android | ios" toReformat="false" toShortenFQNames="true">
+  <template name="mobile.target" value="# Target mobile platform eg: android | ios&#10;mobile.target: $MOBILE_TARGET$" description="Target mobile platform eg: android | ios" toReformat="false" toShortenFQNames="true">
     <variable name="MOBILE_TARGET" expression="" defaultValue="&quot;android&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -241,7 +241,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="mobile.server.args" value="mobile.server.args:$MOBILE_SERVER_ARGS$" description="" toReformat="false" toShortenFQNames="true">
+  <template name="mobile.server.args" value="mobile.server.args: $MOBILE_SERVER_ARGS$" description="" toReformat="false" toShortenFQNames="true">
     <variable name="MOBILE_SERVER_ARGS" expression="" defaultValue="&quot;appiumserver&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -258,7 +258,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="mobile.hub" value="# cloud provider eg: browserstack | kobiton | etc&#10;mobile.hub:$HUB$" description="Hub file name under resources" toReformat="false" toShortenFQNames="true">
+  <template name="mobile.hub" value="# cloud provider eg: browserstack | kobiton | etc&#10;mobile.hub: $HUB$" description="Hub file name under resources" toReformat="false" toShortenFQNames="true">
     <variable name="HUB" expression="" defaultValue="&quot;FileNameOfHub&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -275,7 +275,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="mobile.remote.uploadapp" value="# Upload app before execution &lt;true | false&gt;&#10;mobile.remote.uploadapp:$TRUE$" description="Upload app before execution" toReformat="false" toShortenFQNames="true">
+  <template name="mobile.remote.uploadapp" value="# Upload app before execution &lt;true | false&gt;&#10;mobile.remote.uploadapp: $TRUE$" description="Upload app before execution" toReformat="false" toShortenFQNames="true">
     <variable name="TRUE" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -292,7 +292,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="mobile.app.name" value="# Name of mobile app under app folder&#10;mobile.app.name:$NAME$" description="Name of mobile app under app folder" toReformat="false" toShortenFQNames="true">
+  <template name="mobile.app.name" value="# Name of mobile app under app folder&#10;mobile.app.name: $NAME$" description="Name of mobile app under app folder" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="&quot;MyApp&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -309,7 +309,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="mobile.filters" value="# Filters to chose devices for test execution&#10;mobile.filters:$FILTERS$" description="Filters to chose devices for test execution" toReformat="false" toShortenFQNames="true">
+  <template name="mobile.filters" value="# Filters to chose devices for test execution&#10;mobile.filters: $FILTERS$" description="Filters to chose devices for test execution" toReformat="false" toShortenFQNames="true">
     <variable name="FILTERS" expression="" defaultValue="&quot;android&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -326,7 +326,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="mobile.executables" value="# mobile.executables&#10;mobile.filters:$EXECUTABLES$" description="Mobile executables" toReformat="false" toShortenFQNames="true">
+  <template name="mobile.executables" value="# mobile.executables&#10;mobile.filters: $EXECUTABLES$" description="Mobile executables" toReformat="false" toShortenFQNames="true">
     <variable name="EXECUTABLES" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -343,7 +343,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="datasets.dir" value="# Folder name under resources having data&#10;datasets.dir:$DATASETS_DIR$" description="Folder name under resources having data" toReformat="false" toShortenFQNames="true">
+  <template name="datasets.dir" value="# Folder name under resources having data&#10;datasets.dir: $DATASETS_DIR$" description="Folder name under resources having data" toReformat="false" toShortenFQNames="true">
     <variable name="DATASETS_DIR" expression="" defaultValue="&quot;datasets&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -360,7 +360,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="datasets.env" value="# Folder name under datasets.dir having data for specific environment eg: UAT | PREPROD | QA&#10;datasets.env:$DATASETS_ENV$" description="Folder name under resources having data for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
+  <template name="datasets.env" value="# Folder name under datasets.dir having data for specific environment eg: UAT | PREPROD | QA&#10;datasets.env: $DATASETS_ENV$" description="Folder name under resources having data for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
     <variable name="DATASETS_ENV" expression="" defaultValue="&quot;UAT&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -377,7 +377,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="locale.dir" value="# Folder name under resources having locale data&#10;locale.dir:$LOCALE_DIR$" description="Folder name under resources having locale data" toReformat="false" toShortenFQNames="true">
+  <template name="locale.dir" value="# Folder name under resources having locale data&#10;locale.dir: $LOCALE_DIR$" description="Folder name under resources having locale data" toReformat="false" toShortenFQNames="true">
     <variable name="LOCALE_DIR" expression="" defaultValue="&quot;locale_data&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -394,7 +394,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="locale" value="# Locale for runtime&#10;locale:$LOCALE$" description="Locale for runtime" toReformat="false" toShortenFQNames="true">
+  <template name="locale" value="# Locale for runtime&#10;locale: $LOCALE$" description="Locale for runtime" toReformat="false" toShortenFQNames="true">
     <variable name="LOCALE" expression="" defaultValue="&quot;en&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -411,7 +411,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="cloud.config.dir" value="# Folder name under resources having cloud configurations&#10;cloud.config.dir:$CLOUD_CONFIG_DIR$" description="Folder name under resources having cloud configurations" toReformat="false" toShortenFQNames="true">
+  <template name="cloud.config.dir" value="# Folder name under resources having cloud configurations&#10;cloud.config.dir: $CLOUD_CONFIG_DIR$" description="Folder name under resources having cloud configurations" toReformat="false" toShortenFQNames="true">
     <variable name="CLOUD_CONFIG_DIR" expression="" defaultValue="&quot;cloud_config&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -428,7 +428,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="api.hosts" value="# File with API host details under resources&#10;api.hosts:$HOSTS_FILE$" description="File with API host details under resources" toReformat="false" toShortenFQNames="true">
+  <template name="api.hosts" value="# File with API host details under resources&#10;api.hosts: $HOSTS_FILE$" description="File with API host details under resources" toReformat="false" toShortenFQNames="true">
     <variable name="HOSTS_FILE" expression="" defaultValue="&quot;APIHosts&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -445,7 +445,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="db.drivers" value="# DB Drivers&#10;api.hosts:$DB_DRIVERS$" description="DB drivers" toReformat="false" toShortenFQNames="true">
+  <template name="db.drivers" value="# DB Drivers&#10;api.hosts: $DB_DRIVERS$" description="DB drivers" toReformat="false" toShortenFQNames="true">
     <variable name="DB_DRIVERS" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -462,7 +462,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="api.env" value="# Folder name under resources having api hosts for specific environment eg: UAT | PREPROD | QA&#10;api.env:$API_ENV$" description="Folder name under resources having api hosts for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
+  <template name="api.env" value="# Folder name under resources having api hosts for specific environment eg: UAT | PREPROD | QA&#10;api.env: $API_ENV$" description="Folder name under resources having api hosts for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
     <variable name="API_ENV" expression="" defaultValue="&quot;UAT&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -479,7 +479,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="web.env" value="# Folder name under resources having web app properties for specific environment eg: UAT | PREPROD | QA&#10;web.env:$WEB_ENV$" description="Folder name under resources having web app properties for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
+  <template name="web.env" value="# Folder name under resources having web app properties for specific environment eg: UAT | PREPROD | QA&#10;web.env: $WEB_ENV$" description="Folder name under resources having web app properties for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
     <variable name="WEB_ENV" expression="" defaultValue="&quot;UAT&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -496,7 +496,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="mobile.env" value="# Folder name under resources having mobile app properties for specific environment eg: UAT | PREPROD | QA&#10;mobile.env:$MOBILE_ENV$" description="Folder name under resources having mobile app properties for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
+  <template name="mobile.env" value="# Folder name under resources having mobile app properties for specific environment eg: UAT | PREPROD | QA&#10;mobile.env: $MOBILE_ENV$" description="Folder name under resources having mobile app properties for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
     <variable name="MOBILE_ENV" expression="" defaultValue="&quot;UAT&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -513,7 +513,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="locale.env" value="# Folder name under resources having locale data for specific environment eg: UAT | PREPROD | QA&#10;locale.env:$LOCALE_ENV$" description="Folder name under resources having locale data for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
+  <template name="locale.env" value="# Folder name under resources having locale data for specific environment eg: UAT | PREPROD | QA&#10;locale.env: $LOCALE_ENV$" description="Folder name under resources having locale data for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
     <variable name="LOCALE_ENV" expression="" defaultValue="&quot;UAT&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -530,7 +530,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="db.env" value="# Folder name under resources having database details for specific environment eg: UAT | PREPROD | QA&#10;db.env:$DB_ENV$" description="Folder name under resources having database details for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
+  <template name="db.env" value="# Folder name under resources having database details for specific environment eg: UAT | PREPROD | QA&#10;db.env: $DB_ENV$" description="Folder name under resources having database details for specific environment eg: UAT | PREPROD | QA" toReformat="false" toShortenFQNames="true">
     <variable name="DB_ENV" expression="" defaultValue="&quot;UAT&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -557,7 +557,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="log.types" value="# Logging types &lt;console|file|console,file|none&gt;&#10;log.types:$LOG_TYPES$" description="Logging types &lt;console|file|console,file|none&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="log.types" value="# Logging types &lt;console|file|console,file|none&gt;&#10;log.types: $LOG_TYPES$" description="Logging types &lt;console|file|console,file|none&gt;" toReformat="false" toShortenFQNames="true">
     <variable name="LOG_TYPES" expression="" defaultValue="&quot;console,file&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -574,7 +574,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="log.console.level" value="# Console logging level &lt;info|debug&gt;&#10;log.console.level:$LOG_LEVEL$" description="# Console logging level &lt;info|debug&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="log.console.level" value="# Console logging level &lt;info|debug&gt;&#10;log.console.level: $LOG_LEVEL$" description="# Console logging level &lt;info|debug&gt;" toReformat="false" toShortenFQNames="true">
     <variable name="LOG_LEVEL" expression="" defaultValue="&quot;debug&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -591,7 +591,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="log.file.level" value="# File logging level &lt;info|debug&gt;&#10;log.file.level:$LOG_LEVEL$" description="# File logging level &lt;info|debug&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="log.file.level" value="# File logging level &lt;info|debug&gt;&#10;log.file.level: $LOG_LEVEL$" description="# File logging level &lt;info|debug&gt;" toReformat="false" toShortenFQNames="true">
     <variable name="LOG_LEVEL" expression="" defaultValue="&quot;debug&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
