@@ -344,7 +344,7 @@
     </context>
   </template>
   <template name="datasets.dir" value="# Folder name under resources having data&#10;datasets.dir: $DATASETS_DIR$" description="Folder name under resources having data" toReformat="false" toShortenFQNames="true">
-    <variable name="DATASETS_DIR" expression="" defaultValue="&quot;datasets&quot;" alwaysStopAt="true" />
+    <variable name="DATASETS_DIR" expression="" defaultValue="&quot;data_sets&quot;" alwaysStopAt="true" />
     <context>
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="GAUGE" value="false" />

@@ -7,25 +7,22 @@ public class ${NAME} extends DataSetsClient {
   /*
   // Assuming the addresses.json to be :
 
-  {
-  "default_address": [
     {
-      "firstName": "Hari",
-      "city": "Bangalore",
-      "pinCode": "11001",
+      "address": [
+        {
+          "firstName": "Puja",
+          "city": "Delhi",
+          "pinCode": "22002"
+        }
+      ]
     }
-  }
 
    // Sample DataClient implementation would be:
 
     public class AddressDataClient extends DataSetsClient {
-      public Address getDefaultAddress() {
-        return getAddress(DataKeys.DEFAULT_ADDRESS);
-      }
-
-      public static class DataKeys {
-        public static final String DEFAULT_ADDRESS = "default_address";
-      }
+        public Address getAddress() {
+            return getValue("address", Address.class);
+        }
     }
    */
 }
