@@ -4,9 +4,7 @@
     <vendor email="pani@testvagrant.com" url="http://www.testvagrant.com">TestVagrant</vendor>
 
     <description><![CDATA[
-        Ekam by TestVagrant<br>
-        <em>Rapid automated tests development library for your Web, Mobile & REST applications.<br></em>
-        <em>Unify all of your test automation under a single repository.</em>
+        <em>A Rapid Test Development Platform. Develop automated tests in minutes for Web, Mobile (Android & iOS) & REST services. Powered by Selenium, Appium & Retrofit <br></em>
         ]]></description>
 
 
@@ -40,15 +38,26 @@
             <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl W"/>
         </action>
 
-        <!--        This generates code but need just like live template-->
-        <!--        <action id="com.testvagrant.ekam.popupAction.EkamWebStepGenerateAction"-->
-        <!--                class="com.testvagrant.ekam.popupAction.EkamWebStepGenerateAction" text="Ekam Web Step"-->
-        <!--                description="Generates a Page class method">-->
-        <!--            <add-to-group group-id="GenerateGroup" anchor="first"/>-->
-        <!--        </action>-->
+        <action id="com.testvagrant.ekam.popupAction.EkamWebStepGenerateAction"
+                class="com.testvagrant.ekam.popupAction.EkamWebStepGenerateAction" text="Ekam Web Step"
+                description="Generates a Page class method">
+            <add-to-group group-id="GenerateGroup" anchor="first"/>
+        </action>
+        <action id="com.testvagrant.ekam.popupAction.EkamMobileStepGenerateAction"
+                class="com.testvagrant.ekam.popupAction.EkamMobileStepGenerateAction" text="Ekam Mobile Step"
+                description="Generates a Page class method">
+            <add-to-group group-id="GenerateGroup" anchor="after" relative-to-action="com.testvagrant.ekam.popupAction.EkamWebStepGenerateAction"/>
+        </action>
+        <action id="com.testvagrant.ekam.popupAction.EkamApiStepGenerateAction"
+                class="com.testvagrant.ekam.popupAction.EkamApiStepGenerateAction" text="Ekam Api Step"
+                description="Generates an API Step method">
+            <add-to-group group-id="GenerateGroup" anchor="after" relative-to-action="com.testvagrant.ekam.popupAction.EkamMobileStepGenerateAction"/>
+        </action>
 
     </actions>
     <change-notes>
+        Version 1.0.6 : Introduced Generation of steps via generate code
+        Version 1.0.5 : MAde Plugin searchable in marketplace
         Version 1.0.4 : Fixed Plugin installation issues
         Version 1.0.3 : Live templates logging related properties
         Version 1.0.2 : Live templates for all properties and Multi Platform Finder

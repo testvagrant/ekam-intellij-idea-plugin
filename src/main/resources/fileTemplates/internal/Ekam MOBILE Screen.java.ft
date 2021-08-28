@@ -1,7 +1,7 @@
 package com.testvagrant.sdk.module.filetypes;
 
-import com.testvagrant.ekam.commons.annotations.MobileStep;
 import com.testvagrant.ekam.mobile.MobileScreen;
+import com.testvagrant.ekam.reports.annotations.MobileStep;
 import org.openqa.selenium.By;
 import static org.testng.Assert.*;
 

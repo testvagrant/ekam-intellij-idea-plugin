@@ -10,7 +10,7 @@ import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.project.Project;
 import org.jetbrains.annotations.NotNull;
 
-public class EkamWebStepGenerateAction extends AnAction {
+public class EkamMobileStepGenerateAction extends AnAction {
 
     @Override
     public void update(AnActionEvent e) {
@@ -23,7 +23,7 @@ public class EkamWebStepGenerateAction extends AnAction {
         final Editor editor = e.getRequiredData(CommonDataKeys.EDITOR);
         final Project project = e.getRequiredData(CommonDataKeys.PROJECT);
 
-        TemplateImpl template = TemplateSettings.getInstance().getTemplate("webstep", "Ekam");
+        TemplateImpl template = TemplateSettings.getInstance().getTemplate("mobilestep", "Ekam");
         TemplateManager.getInstance(project).startTemplate(editor, template);
 
     }

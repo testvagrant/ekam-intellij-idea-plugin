@@ -12,7 +12,7 @@ import org.jetbrains.annotations.NotNull;
 public class CreateNewFileAction extends CreateFileFromTemplateAction implements DumbAware {
 
     public CreateNewFileAction() {
-        super("Ekam Component", "Create new Ekam API Component.", EkamPluginIcons.ProjectType);
+        super("Ekam Component", "Create new Ekam Component.", EkamPluginIcons.ProjectType);
     }
 
     @Override
