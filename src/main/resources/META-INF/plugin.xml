@@ -53,6 +53,11 @@
                 description="Generates an API Step method">
             <add-to-group group-id="GenerateGroup" anchor="after" relative-to-action="com.testvagrant.ekam.popupAction.EkamMobileStepGenerateAction"/>
         </action>
+        <action id="com.testvagrant.ekam.popupAction.EkamRetrofit2GenerateAction"
+                class="com.testvagrant.ekam.popupAction.EkamRetrofit2GenerateAction" text="Ekam Retrofit2 Generator"
+                description="Generates Retrofit service code">
+            <add-to-group group-id="GenerateGroup" anchor="after" relative-to-action="com.testvagrant.ekam.popupAction.EkamApiStepGenerateAction"/>
+        </action>
 
     </actions>
     <change-notes>
