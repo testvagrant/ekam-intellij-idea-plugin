@@ -1,14 +1,14 @@
 package com.testvagrant.sdk.module.filetypes;
 
-import com.testvagrant.ekam.mobile.MobileScreen;
+import com.testvagrant.ekam.atoms.mobile.MobileScreen;
 import com.testvagrant.ekam.reports.annotations.MobileStep;
 import org.openqa.selenium.By;
 import static org.testng.Assert.*;
 
 public class ${NAME} extends MobileScreen {
 
-    @MobileStep(keyword = "When", description = "I hit search button")
-    public void search() {
-
+    @MobileStep(keyword = "When", description = "I login")
+    public ${NAME} login() {
+        return this;
     }
 }

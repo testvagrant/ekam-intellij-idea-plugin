@@ -54,6 +54,15 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="qbcd" value="private By $LOCATOR$ = queryByContentDesc(&quot;$SELECTOR$&quot;);$END$&#10;" description="locate an element by content description" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="LOCATOR" expression="camelCase(String)" defaultValue="&quot;locator&quot;" alwaysStopAt="true" />
+    <variable name="SELECTOR" expression="camelCase(locator)" defaultValue="&quot;test-Username&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
   <template name="test" value="@org.testng.annotations.Test(groups = &quot;$TAG$&quot;)&#10;public void should$NAME$() {&#10;  $END$&#10;}" description="Generate a TestNG test" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="NAME" expression="" defaultValue="&quot;TestSomething&quot;" alwaysStopAt="true" />
     <variable name="TAG" expression="" defaultValue="&quot;SmokeTest&quot;" alwaysStopAt="true" />
