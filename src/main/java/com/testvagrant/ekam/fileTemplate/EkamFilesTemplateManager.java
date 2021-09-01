@@ -1,5 +1,6 @@
 package com.testvagrant.ekam.fileTemplate;
 
+import com.intellij.icons.AllIcons;
 import com.intellij.ide.fileTemplates.FileTemplateDescriptor;
 import com.intellij.ide.fileTemplates.FileTemplateGroupDescriptor;
 import com.intellij.ide.fileTemplates.FileTemplateGroupDescriptorFactory;
@@ -14,17 +15,20 @@ public class EkamFilesTemplateManager implements FileTemplateGroupDescriptorFact
     public static final String WEB_PAGE_FILE = "Ekam WEB Page";
     public static final String MOBILE_SCREEN_FILE = "Ekam MOBILE Screen";
 
+    public static final String RETROFIT_CLIENT = "Ekam RETROFIT Client";
+
     public static final String DATA_CLIENT = "Ekam DATA Client";
 
     @Override
     public FileTemplateGroupDescriptor getFileTemplatesDescriptor() {
-        FileTemplateGroupDescriptor descriptor = new FileTemplateGroupDescriptor("Ekam files", EkamPluginIcons.ProjectType);
-        descriptor.addTemplate(new FileTemplateDescriptor(API_TEST_FILE, EkamPluginIcons.ProjectType));
-        descriptor.addTemplate(new FileTemplateDescriptor(WEB_TEST_FILE, EkamPluginIcons.ProjectType));
-        descriptor.addTemplate(new FileTemplateDescriptor(MOBILE_TEST_FILE, EkamPluginIcons.ProjectType));
-        descriptor.addTemplate(new FileTemplateDescriptor(WEB_PAGE_FILE, EkamPluginIcons.ProjectType));
-        descriptor.addTemplate(new FileTemplateDescriptor(MOBILE_SCREEN_FILE, EkamPluginIcons.ProjectType));
-        descriptor.addTemplate(new FileTemplateDescriptor(DATA_CLIENT, EkamPluginIcons.ProjectType));
+        FileTemplateGroupDescriptor descriptor = new FileTemplateGroupDescriptor("Ekam files", AllIcons.Nodes.Class);
+        descriptor.addTemplate(new FileTemplateDescriptor(API_TEST_FILE, AllIcons.Nodes.Class));
+        descriptor.addTemplate(new FileTemplateDescriptor(WEB_TEST_FILE, AllIcons.Nodes.Class));
+        descriptor.addTemplate(new FileTemplateDescriptor(MOBILE_TEST_FILE, AllIcons.Nodes.Class));
+        descriptor.addTemplate(new FileTemplateDescriptor(WEB_PAGE_FILE, AllIcons.Nodes.Class));
+        descriptor.addTemplate(new FileTemplateDescriptor(MOBILE_SCREEN_FILE, AllIcons.Nodes.Class));
+        descriptor.addTemplate(new FileTemplateDescriptor(RETROFIT_CLIENT, AllIcons.Nodes.Class));
+        descriptor.addTemplate(new FileTemplateDescriptor(DATA_CLIENT, AllIcons.Nodes.Class));
         return descriptor;
     }
 

@@ -6,7 +6,7 @@ plugins {
 intellij { plugins = ['com.intellij.java', 'com.robohorse.robopojogenerator:2.3.1', 'Docker:212.4746.92'] }
 
 group 'com.testvagrant'
-version '1.0.6'
+version '1.0.7'
 
 repositories {
     mavenCentral()
@@ -23,7 +23,7 @@ intellij {
 }
 patchPluginXml {
     changeNotes = """
-      Introduced Generation of steps via generate code.<br>
+      Introduced Generation Retrofit Client class.<br>
       """
 }
 test {

@@ -1,0 +1,20 @@
+import com.google.inject.Inject;
+import com.google.inject.name.Named;
+import com.testvagrant.ekam.api.retrofit.RetrofitBaseClient;
+import com.testvagrant.ekam.reports.annotations.APIStep;
+import retrofit2.Call;
+import retrofit2.http.*;
+
+public class ${NAME}Client extends RetrofitBaseClient {
+
+    private interface ${NAME}Service {
+    }
+
+    private final ${NAME}Service service;
+
+    @Inject
+    public ${NAME}Client(@Named("baseUrl") String baseUrl) {
+        super(baseUrl);
+        service = httpClient.getService(${NAME}Service.class);
+    }
+}

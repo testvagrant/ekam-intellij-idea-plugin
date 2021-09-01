@@ -79,11 +79,10 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="apistep" value="@APIStep(keyword = &quot;$GWT$&quot;, description = &quot;$STATEMENT$&quot;)&#10;public $RETURN$ $METHOD_NAME$() {&#10;    $END$&#10;    return this;&#10;}&#10;" description="Generate Ekam Web Step" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="apistep" value="@APIStep(keyword = &quot;$GWT$&quot;, description = &quot;$STATEMENT$&quot;)&#10;public void $METHOD_NAME$() {&#10;    $END$&#10;    return;&#10;}&#10;" description="Generate Ekam API Step" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="GWT" expression="" defaultValue="&quot;When&quot;" alwaysStopAt="true" />
-    <variable name="STATEMENT" expression="" defaultValue="&quot;I search for query&quot;" alwaysStopAt="true" />
-    <variable name="METHOD_NAME" expression="" defaultValue="&quot;search&quot;" alwaysStopAt="true" />
-    <variable name="RETURN" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="STATEMENT" expression="" defaultValue="&quot;I invoke getSingleUser API&quot;" alwaysStopAt="true" />
+    <variable name="METHOD_NAME" expression="" defaultValue="&quot;getSingleUser&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_DECLARATION" value="true" />
     </context>

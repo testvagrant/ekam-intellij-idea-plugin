@@ -33,9 +33,8 @@
     <actions>
         <action id="com.testvagrant.ekam.actions.CreateNewFileAction"
                 class="com.testvagrant.ekam.actions.CreateNewFileAction" text="Ekam Component"
-                description="Create new dataWeave">
+                description="Create new Ekam Component">
             <add-to-group group-id="NewGroup" anchor="first"/>
-            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl W"/>
         </action>
 
         <action id="com.testvagrant.ekam.popupAction.EkamWebStepGenerateAction"
@@ -61,6 +60,7 @@
 
     </actions>
     <change-notes>
+        Version 1.0.7 : Introduced Generation Retrofit Client class
         Version 1.0.6 : Introduced Generation of steps via generate code
         Version 1.0.5 : MAde Plugin searchable in marketplace
         Version 1.0.4 : Fixed Plugin installation issues
