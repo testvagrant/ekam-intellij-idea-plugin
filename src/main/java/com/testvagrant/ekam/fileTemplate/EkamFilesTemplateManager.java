@@ -4,7 +4,6 @@ import com.intellij.icons.AllIcons;
 import com.intellij.ide.fileTemplates.FileTemplateDescriptor;
 import com.intellij.ide.fileTemplates.FileTemplateGroupDescriptor;
 import com.intellij.ide.fileTemplates.FileTemplateGroupDescriptorFactory;
-import com.testvagrant.ekam.icons.EkamPluginIcons;
 
 public class EkamFilesTemplateManager implements FileTemplateGroupDescriptorFactory {
 
