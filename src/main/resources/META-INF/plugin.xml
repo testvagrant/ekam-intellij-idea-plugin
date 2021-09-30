@@ -60,6 +60,7 @@
 
     </actions>
     <change-notes>
+        Version 1.0.8 : Bumped Ekam binaries to 1.0.8
         Version 1.0.7 : Introduced Generation Retrofit Client class
         Version 1.0.6 : Introduced Generation of steps via generate code
         Version 1.0.5 : MAde Plugin searchable in marketplace
