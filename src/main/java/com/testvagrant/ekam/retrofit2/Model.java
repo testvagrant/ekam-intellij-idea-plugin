@@ -65,7 +65,10 @@ public class Model {
     private String getAnnotation(Collection.ItemBean item) {
         String result = "";
         result += "        @" + item.getRequest().getMethod();
-        if (item.getRequest().getUrl() instanceof String)
+
+        if(null == item.getRequest().getUrl())
+            result += "(\"" + "/path/of/api" + "\")";
+        else if (item.getRequest().getUrl() instanceof String)
             result += "(\"" + getApiPath((String) item.getRequest().getUrl(), false) + "\")";
         else if (item.getRequest().getUrl() instanceof LinkedTreeMap) {
             LinkedTreeMap url = (LinkedTreeMap) item.getRequest().getUrl();

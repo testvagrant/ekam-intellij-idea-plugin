@@ -4,7 +4,23 @@
     <vendor email="pani@testvagrant.com" url="http://www.testvagrant.com">TestVagrant</vendor>
 
     <description><![CDATA[
+        <b><a href="https://ekam.studio/">Supercharged test automation!</a></b><br>
         <em>A Rapid Test Development Platform. Develop automated tests in minutes for Web, Mobile (Android & iOS) & REST services. Powered by Selenium, Appium & Retrofit <br></em>
+
+        <b> Features: </b><br>
+        <ul>
+            <li>1. Develop automated tests for Web, Android, iOS & REST APIs</li>
+            <li>2. Automate a mobile test, execute it on both Android and iOS</li>
+            <li>3. Automate a web test, execute it on both desktop and responsive mode</li>
+            <li>4. Execute automated tests on multiple environments</li>
+            <li>5. Test Data Management as simple JSON structures with multi-environment support </li>
+            <li>6. Localization testing - Execute tests for a different locale</li>
+            <li>7. Setup local device lab</li>
+            <li>8. Dashboard</li>
+            <li>9. Test Patterns for easily adding tests</li>
+            <li>10. Cloud-ready. Execute tests in the cloud with easy configurations</li>
+        </ul>
+
         ]]></description>
 
 
@@ -60,6 +76,7 @@
 
     </actions>
     <change-notes>
+        Version 1.0.9 : Enhancements to Generate Service APIs for retrofit
         Version 1.0.8 : Bumped Ekam binaries to 1.0.8
         Version 1.0.7 : Introduced Generation Retrofit Client class
         Version 1.0.6 : Introduced Generation of steps via generate code
