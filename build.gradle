@@ -1,12 +1,12 @@
 plugins {
-    id 'org.jetbrains.intellij' version '1.1.4'
-    id 'java'
+    id("java")
+    id("org.jetbrains.intellij") version "1.9.0"
 }
 
-intellij { plugins = ['com.intellij.java', 'com.robohorse.robopojogenerator:2.3.1', 'Docker:212.4746.92'] }
+intellij { plugins = ['com.intellij.java', 'com.robohorse.robopojogenerator:2.3.7', 'Docker:222.3739.64'] }
 
 group 'com.testvagrant'
-version '1.0.9'
+version '1.1.3'
 
 repositories {
     mavenCentral()
@@ -19,11 +19,11 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version = '2021.2'
+    version = '2022.2.1'
 }
 patchPluginXml {
     changeNotes = """
-      Enhancements to Generate Service APIs for retrofit<br>
+      Plugin compatiability with 2022.2<br>
       """
 }
 test {
