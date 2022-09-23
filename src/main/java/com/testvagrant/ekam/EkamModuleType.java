@@ -1,5 +1,6 @@
 package com.testvagrant.ekam;
 
+import com.intellij.ide.util.projectWizard.JavaModuleBuilder;
 import com.intellij.openapi.module.JavaModuleType;
 import com.intellij.openapi.module.ModuleTypeManager;
 import com.intellij.openapi.util.IconLoader;
@@ -22,8 +23,8 @@ public class EkamModuleType extends JavaModuleType {
 
     @NotNull
     @Override
-    public EkamModuleBuilder createModuleBuilder() {
-        return new EkamModuleBuilder();
+    public JavaModuleBuilder createModuleBuilder() {
+        return new JavaModuleBuilder();
     }
 
     @NotNull

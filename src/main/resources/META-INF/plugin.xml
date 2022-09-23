@@ -76,6 +76,7 @@
 
     </actions>
     <change-notes>
+        Version 1.1.4 : New project wizard
         Version 1.1.3 : Plugin compatiability with IntelliJ IDEA 2022.2
         Version 1.1.2 : Plugin compatiability with IntelliJ IDEA 2022.1
         Version 1.1.1 : Plugin compatiability with IntelliJ IDEA 2021.3

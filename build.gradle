@@ -6,7 +6,7 @@ plugins {
 intellij { plugins = ['com.intellij.java', 'com.robohorse.robopojogenerator:2.3.7', 'Docker:222.3739.64'] }
 
 group 'com.testvagrant'
-version '1.1.3'
+version '1.1.4'
 
 repositories {
     mavenCentral()
